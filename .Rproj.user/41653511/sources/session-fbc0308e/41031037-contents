@@ -55,7 +55,7 @@ output:
     audio.play().catch(error => {
       console.log("Autoplay blocked, user interaction required: ", error);
       // alert("Haz clic en cualquier parte de la página para iniciar la música.");
-    });
+    <!-- }); -->
   });
 <!-- </script> -->
 
