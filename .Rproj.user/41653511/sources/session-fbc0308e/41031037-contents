@@ -57,4 +57,5 @@ output:
       // alert("Haz clic en cualquier parte de la página para iniciar la música.");
     });
   });
-</script>
+<!-- </script> -->
+
