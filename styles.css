@@ -1,0 +1,114 @@
+/* Paleta de colores Atenuada (Inspiración en Plastic Beach, pero más sobria y profesional):
+  Gris Azulado (Base/Fondo): #E0E7E9 (cielo suave)
+  Azul Marino (Mar/Contraste): #46697D (mar profundo y serio)
+  Coral Suave (Acento/Botón): #D87093 (rosa coral apagado)
+  Blanco/Estructura: #FFFFFF
+  Texto: #333333
+  */
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Fondo degradado suave (Cielo Gris Azulado a Mar Marino) */
+      background: linear-gradient(to bottom, #E0E7E9 0%, #E0E7E9 50%, #768D9F 50%, #768D9F 100%);
+                                  color: #333333; /* Texto oscuro para buena legibilidad */
+                                    overflow-x: hidden;
+  }
+
+.plastic-beach-container {
+  max-width: 850px;
+  width: 90%;
+  padding: 45px;
+  /* Color blanco limpio para la estructura */
+    background-color: #FFFFFF;
+    border: 2px solid #D3D3D3; /* Borde más sutil */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), /* Sombra más suave */
+    0 0 0 8px rgba(216, 112, 147, 0.2); /* Aura de coral apagado más sutil */
+    border-radius: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+h1 {
+  color: #46697D; /* Azul Marino (Serio y profesional) */
+    font-size: 2.8em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #D3D3D3;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  color: #D87093; /* Coral Suave (Color de acento) */
+    font-size: 1.6em;
+  margin-top: 30px;
+}
+
+.introduccion {
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  color: #555555;
+}
+
+.contexto-info table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  background-color: #F8F8F8; /* Fondo muy claro para la tabla */
+    border-radius: 8px;
+  overflow: hidden;
+}
+
+.contexto-info th, .contexto-info td {
+  padding: 15px;
+  border: 1px solid #EEEEEE; /* Bordes muy claros */
+  text-align: left;
+}
+
+.contexto-info th {
+  background-color: #E0E7E9; /* Azul grisáceo suave */
+    color: #333;
+    font-weight: bold;
+}
+
+.agradecimiento {
+  font-style: italic;
+  color: #777;
+    margin-top: 35px;
+  font-size: 1.05em;
+}
+
+/* Estilo para el botón de Forms (el elemento más contrastante) */
+  .boton-forms {
+    display: inline-block;
+    padding: 18px 35px;
+    margin-top: 25px;
+    background-color: #D87093; /* Coral Suave para el botón */
+      color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(216, 112, 147, 0.4);
+  }
+
+.boton-forms:hover {
+  background-color: #B25F81; /* Un tono más oscuro de coral al pasar el ratón */
+    transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(216, 112, 147, 0.6);
+}
+
+.nota {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #888;
+}

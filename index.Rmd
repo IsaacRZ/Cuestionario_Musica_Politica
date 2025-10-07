@@ -1,0 +1,60 @@
+---
+title: "Cuestionario: Música, Política y Percepción"
+author: "Estudiantes de Big Data"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    self_contained: false
+    css: styles.css
+    theme: null
+---
+
+<div class="plastic-beach-container">
+  
+# Cuestionario: Música, Política y Percepción de la Realidad 🎶🗳️
+
+<p class="introduccion">
+  "¡Hola! Estamos realizando un estudio sobre los gustos musicales y cómo se relacionan con las perspectivas políticas y la interpretación de la realidad. Como estudiante de Big Data, tu opinión es muy valiosa. Este cuestionario es anónimo y confidencial, y tomará aproximadamente 7 minutos completarlo. ¡Gracias por participar!"
+</p>
+
+---
+
+## Contexto del Estudio
+
+<div class="contexto-info">
+  
+| Elemento | Detalle |
+| :--- | :--- |
+| **Población Objetivo** | Estudiantes de la Carrera de Big Data |
+| **Objetivo** | Explorar la relación entre los gustos musicales, las posturas políticas y la interpretación de la realidad social. |
+| **Duración Estimada** | **7 minutos** |
+| **Confidencialidad** | Las respuestas son **anónimas** y solo se usarán con fines académicos. |
+
+</div>
+
+<p class="agradecimiento">
+  ¡Tu participación es clave para el análisis!
+</p>
+
+<a href="https://forms.cloud.microsoft/r/Uamat96zvk" target="_blank" class="boton-forms">
+  ▶ INICIAR CUESTIONARIO AHORA (7 min)
+</a>
+
+<p class="nota">
+  *El cuestionario se abrirá en una nueva pestaña.*
+</p>
+
+</div>
+
+<audio id="background-audio" src="musica_fondo.mp3" loop autoplay></audio>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const audio = document.getElementById('background-audio');
+    audio.volume = 0.2; // Volumen bajo (ajusta a tu gusto, de 0.0 a 1.0)
+    audio.play().catch(error => {
+      console.log("Autoplay blocked, user interaction required: ", error);
+      // alert("Haz clic en cualquier parte de la página para iniciar la música.");
+    });
+  });
+</script>
